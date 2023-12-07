@@ -1,15 +1,14 @@
 class Stack<T> {
     private var top: Node<T>?
     var size = 0
+    var isEmpty: Bool {
+        size == 0
+    }
 
     init() {}
 
     func peek() -> T? {
         top?.value
-    }
-
-    func isEmpty() -> Bool {
-        size == 0
     }
 
     func push(_ value: T) {
