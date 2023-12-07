@@ -1,3 +1,5 @@
-import UIKit
+class Stack<T> {
+    private var elements: [T] = []
 
-var greeting = "Hello, playground"
+    init() {}
+}
