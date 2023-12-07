@@ -1,15 +1,5 @@
-class Node<T> {
-    var value: T
-    var next: Node?
-
-    init(_ value: T, _ next: Node? = nil) {
-        self.value = value
-        self.next = next
-    }
-}
-
 class Stack<T> {
-    var top: Node<T>?
+    private var top: Node<T>?
     var size = 0
 
     init() {}
@@ -35,5 +25,15 @@ class Stack<T> {
         size -= 1
 
         return value
+    }
+}
+
+class Node<T> {
+    var value: T
+    var next: Node?
+
+    init(_ value: T, _ next: Node? = nil) {
+        self.value = value
+        self.next = next
     }
 }
