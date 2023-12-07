@@ -17,7 +17,7 @@ class Stack<T> {
     }
 
     func pop() -> T? {
-        if isEmpty() { return nil }
+        if isEmpty { return nil }
 
         let value = top?.value
         top = top?.next
