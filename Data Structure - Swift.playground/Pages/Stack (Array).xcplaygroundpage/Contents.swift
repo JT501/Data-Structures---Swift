@@ -17,4 +17,8 @@ class Stack<T> {
     func pop() -> T? {
         elements.removeLast()
     }
+    
+    func toArray() -> [T] {
+        elements
+    }
 }
